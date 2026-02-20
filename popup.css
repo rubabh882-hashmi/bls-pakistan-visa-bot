@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #667eea;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+description {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.status-section {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+}
+
+.status-section h3 {
+    color: #667eea;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#status {
+    font-size: 16px;
+    font-weight: bold;
+    color: #764ba2;
+}
+
+#lastCheck {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-start {
+    background: #667eea;
+    color: white;
+}
+
+.btn-start:hover:not(:disabled) {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-stop {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-stop:hover:not(:disabled) {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+.settings {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+
+.settings input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.log-section {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #764ba2;
+}
+
+.log-section h3 {
+    color: #764ba2;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.log-list {
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #666;
+    min-height: 50px;
+}
+
+.log-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    font-family: 'Courier New', monospace;
+}
+
+.log-item:last-child {
+    border-bottom: none;
+}
+
+.log-item.success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.log-item.error {
+    color: #e74c3c;
+}
+
+.footer {
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
